@@ -1,5 +1,4 @@
 package zooAnimales;
-import gestion.*;
 
 public class Mamifero extends Animal{
     static int totalMamiferos;
@@ -22,13 +21,14 @@ public class Mamifero extends Animal{
         return totalAnimales;
     }
 
-    public static void crearCaballo(String nombre, int edad, String genero){
+    public static Mamifero crearCaballo(String nombre, int edad, String genero){
         caballos += 1;
-        Mamifero(nombre, edad, "pradera", genero, true, 4)
+        return new Mamifero(nombre, edad, "pradera", genero, true, 4);
 
     }
 
-    public static void crearLeon(String nombre, int edad, String genero){
+    public static Mamifero crearLeon(String nombre, int edad, String genero){
         leones += 1;
+        return new Mamifero(nombre, edad, "selva", genero, true, 4);
     }
 }

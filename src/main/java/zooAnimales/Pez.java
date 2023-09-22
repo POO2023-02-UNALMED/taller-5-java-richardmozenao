@@ -1,5 +1,4 @@
 package zooAnimales;
-import gestion.*;
 
 public class Pez extends Animal{
     static int totalPeces;
@@ -27,11 +26,13 @@ public class Pez extends Animal{
         return "reptar";
     }
 
-    public static void crearSalmon(){
+    public static Pez crearSalmon(String nombre, int edad, String genero){
         salmones += 1;
+        return new Pez(nombre, edad, "oceano", genero, "rojo", 6);
     }
 
-    public static void crearBacalao(){
+    public static Pez crearBacalao(String nombre, int edad, String genero){
         bacalaos += 1;
+        return new Pez(nombre, edad, "oceano", genero, gris, 6);
     }
 }

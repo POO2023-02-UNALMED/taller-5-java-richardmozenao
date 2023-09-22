@@ -1,5 +1,4 @@
 package zooAnimales;
-import gestion.*;
 
 public class Ave extends Animal{
     static int totalAves;
@@ -24,11 +23,14 @@ public class Ave extends Animal{
         return "volar";
     }
 
-    public static void crearHalcon(){
+    public static Ave crearHalcon(String nombre, int edad, String genero){
         halcones += 1;
+        return new Ave(nombre, edad, "montanas", genero, "cafe glorioso");
+
     }
 
-    public static void crearAguila(){
+    public static Ave crearAguila(String nombre, int edad, String genero){
         aguilas += 1;
+        return new Ave(nombre, edad, "montanas", genero, "blanco y amarillo");
     }
 }

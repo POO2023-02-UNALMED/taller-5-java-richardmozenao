@@ -1,5 +1,4 @@
 package zooAnimales;
-import gestion.*;
 
 public class Reptil extends Animal{
     static int totalReptiles;
@@ -27,12 +26,14 @@ public class Reptil extends Animal{
         return "reptar";
     }
 
-    public static void crearIguana(){
+    public static Reptil crearIguana(String nombre, int edad, String genero){
         iguanas += 1;
+        return new Reptil(nombre, edad, "humedal", genero, "verde", 3);
     }
 
-    public static void crearSerpiente(){
+    public static Reptil crearSerpiente(String nombre, int edad, String genero){
         serpientes += 1;
+        return new Reptil(nombre, edad, "jungla", genero, "blanco", 1);
     }
     
     
