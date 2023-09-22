@@ -1,5 +1,6 @@
 package zooAnimales;
-import gestion.*;
+import gestion.Zoologico;
+import gestion.Zona;
 
 public class Animal {
     static int totalAnimales;
@@ -7,7 +8,7 @@ public class Animal {
     int edad;
     String habitat;
     String genero;
-    Zona[] zona;
+    Zona zona;
 
     public Animal(String nombre, int edad, String habitat, String genero){
         this.nombre = nombre;
@@ -26,11 +27,11 @@ public class Animal {
     }
 
     public static String totalPorTipo(){
-        String mensaje = String.format("Mamiferos:%d\nAves:%d\nReptiles:%d\nPeces:%d\nAnfibios:%d", Mamifero.cantidadMamiferos(), Ave.cantidadAves(), Reptil.cantidadReptiles(), Pez.cantidadPeces(), Anfibio.cantidadAnfibios());
+        String mensaje = String.format("Mamiferos:%d\n+Aves:%d\nReptiles:%d\nPeces:%d\nAnfibios:%d", Mamifero.cantidadMamiferos(), Ave.cantidadAves(), Reptil.cantidadReptiles(), Pez.cantidadPeces(), Anfibio.cantidadAnfibios());
         return mensaje;
     }
 
     public String toString(){
-        return String.format("Mi nombre es %s, tengo una edad de %d, habito en %s y mi genero %s, la zona en la que me ubico es %s, en el %s", nombre, edad, habitat, genero, zona, Zona.zoo);
+        return String.format("Mi nombre es %s, tengo una edad de %d, habito en %s y mi genero %s, la zona en la que me ubico es %s, en el %s", nombre, edad, habitat, genero, zona.nombre, zona.zoo);
     }
 }

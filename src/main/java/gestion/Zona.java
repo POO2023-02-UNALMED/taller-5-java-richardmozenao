@@ -2,8 +2,8 @@ package gestion;
 import zooAnimales.*;
 
 public class Zona {
-    String nombre;
-    Zoologico zoo;
+    public String nombre;
+    public Zoologico zoo;
     Animal[] animales;
 
     public Zona(String nombre, Zoologico zoo, Animal[] animales){
