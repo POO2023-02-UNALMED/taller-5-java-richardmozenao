@@ -3,10 +3,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Ave extends Animal{
-    static int totalAves;
-    static List<Ave> listado = new ArrayList<Ave>();
-    static int halcones;
-    static int aguilas;
+    public static int totalAves;
+    public static List<Ave> listado = new ArrayList<Ave>();
+    public static int halcones;
+    public static int aguilas;
     String colorPlumas;
 
     public Ave(String nombre, int edad, String habitat, String genero, String colorPlumas){
