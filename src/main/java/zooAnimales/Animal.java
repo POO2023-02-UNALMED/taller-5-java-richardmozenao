@@ -4,11 +4,11 @@ import gestion.Zona;
 
 public class Animal {
     private static int totalAnimales;
-    public String nombre;
-    public int edad;
-    public String habitat;
-    public String genero;
-    public Zona zona;
+    private String nombre;
+    private int edad;
+    private String habitat;
+    private String genero;
+    private Zona zona;
 
     public Animal(String nombre, int edad, String habitat, String genero){
         this.nombre = nombre;
@@ -32,10 +32,34 @@ public class Animal {
     }
 
     public String toString(){
-        return String.format("Mi nombre es %s, tengo una edad de %d, habito en %s y mi genero %s, la zona en la que me ubico es %s, en el %s", nombre, edad, habitat, genero, zona.nombre, zona.zoo);
+        return String.format("Mi nombre es %s, tengo una edad de %d, habito en %s y mi genero %s, la zona en la que me ubico es %s, en el %s", nombre, edad, habitat, genero, zona.getNombre(), zona.zoo);
     }
 
     public int getTotalAnimales(){
         return totalAnimales;
+    }
+
+    public String getNombre(){
+        return this.nombre;
+    }
+
+    public int getEdad(){
+        return this.edad;
+    }
+
+    public String getHabitat(){
+        return habitat;
+    }
+
+    public String getGenero(){
+        return genero;
+    }
+
+    public Zona getZona(){
+        return zona;
+    }
+
+    public void setZona(Zona zona){
+        this.zona = zona;
     }
 }
