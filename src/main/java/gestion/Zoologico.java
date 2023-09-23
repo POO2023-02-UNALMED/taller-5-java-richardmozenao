@@ -3,8 +3,8 @@ import java.util.List;
 import java.util.ArrayList;
 
 public class Zoologico {
-    private String nombre;
-    private String ubicacion;
+    String nombre;
+    String ubicacion;
     List<Zona> zona = new ArrayList<Zona>();
 
     public Zoologico(String nombre, String ubicacion){
@@ -20,9 +20,11 @@ public class Zoologico {
         this.zona.add(zona);
     }
 
-    public void cantidadTotalAnimales(){
-
+    public int cantidadTotalAnimales(){
+        int c = 0;
+        for(int i = 0; i<zona.size();i++){
+            c += zona.get(i).cantidadAnimales();
+        }
+        return c;
     }
-
-    
 }

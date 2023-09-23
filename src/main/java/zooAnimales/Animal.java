@@ -3,12 +3,12 @@ import gestion.Zona;
 
 
 public class Animal {
-    static int totalAnimales;
-    private String nombre;
-    int edad;
-    String habitat;
-    String genero;
-    Zona zona;
+    private static int totalAnimales;
+    public String nombre;
+    public int edad;
+    public String habitat;
+    public String genero;
+    public Zona zona;
 
     public Animal(String nombre, int edad, String habitat, String genero){
         this.nombre = nombre;
@@ -33,5 +33,9 @@ public class Animal {
 
     public String toString(){
         return String.format("Mi nombre es %s, tengo una edad de %d, habito en %s y mi genero %s, la zona en la que me ubico es %s, en el %s", nombre, edad, habitat, genero, zona.nombre, zona.zoo);
+    }
+
+    public int getTotalAnimales(){
+        return totalAnimales;
     }
 }
