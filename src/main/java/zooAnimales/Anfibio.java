@@ -1,27 +1,28 @@
 package zooAnimales;
-import gestion.*;
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class Anfibio extends Animal{
-    Anfibio[] listado;
+    static List<Anfibio> listado = new ArrayList<Anfibio>();
     static int ranas;
     static int salamandras;
     String colorPiel;
     boolean venenoso;
 
-    public Anfibio(String nombre, int edad, String habitat, String genero, Zona[] zona, String colorPiel, boolean venenoso){
-        super(nombre, edad, habitat, genero, zona);
+    public Anfibio(String nombre, int edad, String habitat, String genero, String colorPiel, boolean venenoso){
+        super(nombre, edad, habitat, genero);
         this.colorPiel = colorPiel;
         this.venenoso = venenoso;
-        
+        listado.add(this);
     }
 
     public Anfibio(){
-        
+        listado.add(this);
     }
 
     public static int cantidadAnfibios(){
-        totalAnimales += 1;
-        return totalAnimales;
+        return listado.size();
     }
 
     public static String movimiento(){

@@ -1,10 +1,10 @@
 package zooAnimales;
-import gestion.Zoologico;
 import gestion.Zona;
+
 
 public class Animal {
     static int totalAnimales;
-    String nombre;
+    private String nombre;
     int edad;
     String habitat;
     String genero;
@@ -15,11 +15,11 @@ public class Animal {
         this.edad = edad;
         this.habitat = habitat;
         this.genero = genero;
-
+        totalAnimales += 1;
     }
 
     public Animal(){
-
+        totalAnimales += 1;
     }
 
     public static String movimiento(){

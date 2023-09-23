@@ -1,8 +1,11 @@
 package zooAnimales;
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class Reptil extends Animal{
     static int totalReptiles;
-    Reptil[] listado;
+    static List<Reptil> listado = new ArrayList<Reptil>();
     static int iguanas;
     static int serpientes;
     String colorEscamas;
@@ -12,10 +15,10 @@ public class Reptil extends Animal{
         super(nombre, edad, habitat, genero);
         this.colorEscamas = colorEscamas;
         this.largoCola = largoCola;
-        
+        listado.add(this);
     }
     public Reptil(){
-        
+        listado.add(this);
     }
 
     public static int cantidadReptiles(){
