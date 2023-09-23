@@ -4,12 +4,12 @@ import java.util.List;
 
 
 public class Reptil extends Animal{
-    static int totalReptiles;
-    static List<Reptil> listado = new ArrayList<Reptil>();
-    static int iguanas;
-    static int serpientes;
-    String colorEscamas;
-    int largoCola;
+    public static int totalReptiles;
+    public static List<Reptil> listado = new ArrayList<Reptil>();
+    public static int iguanas;
+    public static int serpientes;
+    public String colorEscamas;
+    public int largoCola;
 
     public Reptil(String nombre, int edad, String habitat, String genero, String colorEscamas, int largoCola){
         super(nombre, edad, habitat, genero);

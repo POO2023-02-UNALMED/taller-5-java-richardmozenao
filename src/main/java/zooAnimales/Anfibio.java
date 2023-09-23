@@ -5,10 +5,10 @@ import java.util.List;
 
 public class Anfibio extends Animal{
     static List<Anfibio> listado = new ArrayList<Anfibio>();
-    static int ranas;
-    static int salamandras;
-    String colorPiel;
-    boolean venenoso;
+    public static int ranas;
+    public static int salamandras;
+    public String colorPiel;
+    public boolean venenoso;
 
     public Anfibio(String nombre, int edad, String habitat, String genero, String colorPiel, boolean venenoso){
         super(nombre, edad, habitat, genero);

@@ -3,12 +3,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Pez extends Animal{
-    static int totalPeces;
-    static List<Pez> listado = new ArrayList<Pez>();
-    static int salmones;
-    static int bacalaos;
-    String colorEscamas;
-    int cantidadAletas;
+    public static int totalPeces;
+    public static List<Pez> listado = new ArrayList<Pez>();
+    public static int salmones;
+    public static int bacalaos;
+    public String colorEscamas;
+    public int cantidadAletas;
 
     public Pez(String nombre, int edad, String habitat, String genero, String colorEscamas, int cantidadAletas){
         super(nombre, edad, habitat, genero);
@@ -26,7 +26,7 @@ public class Pez extends Animal{
     }
 
     public static String movimiento(){
-        return "reptar";
+        return "nadar";
     }
 
     public static Pez crearSalmon(String nombre, int edad, String genero){

@@ -4,12 +4,12 @@ import java.util.List;
 
 
 public class Mamifero extends Animal{
-    static int totalMamiferos;
-    static List<Mamifero> listado = new ArrayList<Mamifero>();
-    static int caballos;
-    static int leones;
-    boolean pelaje;
-    int patas;
+    public static int totalMamiferos;
+    public static List<Mamifero> listado = new ArrayList<Mamifero>();
+    public static int caballos;
+    public static int leones;
+    public boolean pelaje;
+    public int patas;
 
     public Mamifero(String nombre, int edad, String habitat, String genero, boolean pelaje, int patas){
         super(nombre, edad, habitat, genero);
