@@ -25,7 +25,7 @@ public class Reptil extends Animal{
         return totalReptiles;
     }
 
-    public static String movimiento(){
+    public String movimiento(){
         return "reptar";
     }
 

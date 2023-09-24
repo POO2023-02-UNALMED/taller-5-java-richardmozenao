@@ -22,7 +22,7 @@ public class Ave extends Animal{
         return listado.size();
     }
 
-    public static String movimiento(){
+    public String movimiento(){
         return "volar";
     }
 
@@ -41,5 +41,5 @@ public class Ave extends Animal{
         return colorPlumas;
     }
 
-    
+
 }

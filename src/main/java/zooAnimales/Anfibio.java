@@ -25,7 +25,7 @@ public class Anfibio extends Animal{
         return listado.size();
     }
 
-    public static String movimiento(){
+    public String movimiento(){
         return "saltar";
     }
 

@@ -22,7 +22,7 @@ public class Animal {
         totalAnimales += 1;
     }
 
-    public static String movimiento(){
+    public String movimiento(){
         return "desplazarse";
     }
 
