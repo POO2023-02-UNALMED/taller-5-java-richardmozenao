@@ -27,12 +27,16 @@ public class Animal {
     }
 
     public static String totalPorTipo(){
-        String mensaje = String.format("Mamiferos:%d\n+Aves:%d\nReptiles:%d\nPeces:%d\nAnfibios:%d", Mamifero.cantidadMamiferos(), Ave.cantidadAves(), Reptil.cantidadReptiles(), Pez.cantidadPeces(), Anfibio.cantidadAnfibios());
+        String mensaje = String.format("Mamiferos: %d\n"+
+        "Aves: %d\n"+
+        "Reptiles: %d\n"+
+        "Peces: %d\n"+
+        "Anfibios: %d", Mamifero.cantidadMamiferos(), Ave.cantidadAves(), Reptil.cantidadReptiles(), Pez.cantidadPeces(), Anfibio.cantidadAnfibios());
         return mensaje;
     }
 
     public String toString(){
-        String mensaje1 = String.format("Mi nombre es %s, tengo una edad de %d, habito en %s y mi genero %s", nombre, edad, habitat, genero);
+        String mensaje1 = String.format("Mi nombre es %s, tengo una edad de %d, habito en %s y mi genero es %s", nombre, edad, habitat, genero);
         String mensaje2 = "";
         if(zona != null){
             mensaje2 = String.format(", la zona en la que me ubico es %s, en el %s", zona.getNombre(), zona.getZoo().getNombre());
