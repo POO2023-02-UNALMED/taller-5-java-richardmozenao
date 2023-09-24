@@ -37,11 +37,11 @@ public class Mamifero extends Animal{
         return new Mamifero(nombre, edad, "selva", genero, true, 4);
     }
     
-    public boolean getPelaje(){
+    public boolean isPelaje(){
         return pelaje;
     }
 
-    public int getPates(){
+    public int getPatas(){
         return patas;
     }
 
