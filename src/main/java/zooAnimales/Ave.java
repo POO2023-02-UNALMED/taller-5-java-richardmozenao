@@ -36,4 +36,10 @@ public class Ave extends Animal{
         aguilas += 1;
         return new Ave(nombre, edad, "montanas", genero, "blanco y amarillo");
     }
+
+    public String getColorPlumas(){
+        return colorPlumas;
+    }
+
+    
 }

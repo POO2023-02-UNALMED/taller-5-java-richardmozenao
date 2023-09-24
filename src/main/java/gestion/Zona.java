@@ -5,7 +5,7 @@ import java.util.ArrayList;
 
 public class Zona {
     private String nombre;
-    public Zoologico zoo;
+    private Zoologico zoo;
     List<Animal> animales = new ArrayList<Animal>();
 
     public Zona(String nombre, Zoologico zoo){
@@ -30,4 +30,7 @@ public class Zona {
         return nombre;
     }
 
+    public Zoologico getZoo(){
+        return zoo;
+    }
 }
