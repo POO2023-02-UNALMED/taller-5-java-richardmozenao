@@ -32,7 +32,12 @@ public class Animal {
     }
 
     public String toString(){
-        return String.format("Mi nombre es %s, tengo una edad de %d, habito en %s y mi genero %s, la zona en la que me ubico es %s, en el %s", nombre, edad, habitat, genero, zona.getNombre(), zona.getZoo());
+        String mensaje1 = String.format("Mi nombre es %s, tengo una edad de %d, habito en %s y mi genero %s", nombre, edad, habitat, genero);
+        String mensaje2 = "";
+        if(zona != null){
+            mensaje2 = String.format(", la zona en la que me ubico es %s, en el %s", zona.getNombre(), zona.getZoo().getNombre());
+        }
+        return mensaje1 + mensaje2;
     }
 
     public int getTotalAnimales(){
