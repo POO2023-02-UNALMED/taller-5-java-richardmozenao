@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Reptil extends Animal{
-    public static int totalReptiles;
     public static List<Reptil> listado = new ArrayList<Reptil>();
     public static int iguanas;
     public static int serpientes;
@@ -22,7 +21,7 @@ public class Reptil extends Animal{
     }
 
     public static int cantidadReptiles(){
-        return totalReptiles;
+        return listado.size();
     }
 
     public String movimiento(){
